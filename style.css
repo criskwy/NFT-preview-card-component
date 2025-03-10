@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --Gray-line: hsl(216, 48%, 68%);   
+  --White: hsl(0, 0%, 100%);
+  --font-Outfit: 'Outfit', sans-serif;
+}
+
+
+
+body{
+    height: 100vh;
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: var(--font-Outfit);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    background-color: var(--Very-dark-blue-card-BG);
+    width: 328px;
+    /* height: 542px; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+}
+
+.card-img {
+    width: 278px;
+    height: 278px;
+    border-radius: 10px;
+    
+}
+.card-title{
+    font-size: 1.25em;
+    color: var(--White);
+    font-weight: 500;
+}
+.card-paragraph{
+    color: var(--Gray-line);
+    font-size: 0.875em;
+    font-weight: 300;
+}
+
+.card-ntf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-ntf-eth, .card-avatar {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.card-avatar-img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
